@@ -4,7 +4,7 @@
                 <div class="header-inner-wrap">
                     <div id="site-logo">
                         <a href="/" rel="home">
-                            <img style="width: 200px;" id="logo-header" src="{{ Vite::asset('resources/images/logo/logo-white-bshome.png') }}"  alt="">
+                            <img style="width: 200px;" id="logo-header" src="{{ asset('resources/images/logo/logo-white-bshome.png') }}"  alt="">
                             <img id="logo-header-mobile" src="images/logo/logo.svg" alt="">
                         </a>
                     </div>
