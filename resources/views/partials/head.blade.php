@@ -24,12 +24,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
     <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="{{ Vite::asset('/resources/icon/flaticon_just-home.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ Vite::asset('/resources/icon/icomoon/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ Vite::asset('public/resources/icon/flaticon_just-home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ Vite::asset('public/resources/icon/icomoon/style.css') }}">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="{{ Vite::asset('/resources/images/favicon.png') }}">
-    <link rel="apple-touch-icon-precomposed" href="{{ Vite::asset('/images/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ Vite::asset('public/resources/images/favicon.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ Vite::asset('public/images/favicon.png') }}">
     
     
 </head>
