@@ -7,8 +7,10 @@
 @import './swiper-bundle.min.css';
 @import './magnific-popup.min.css';
 @import './mmenu.css';
-@import './jquery.background-video.css';
+@import './jquery.mb.YTPlayer.min.css';
 @import './style.css';
+@import './custom.css';
+@import 'plyr/dist/plyr.css'; 
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

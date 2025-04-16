@@ -39,18 +39,18 @@
                 </a>
                 <ul>
                     <li class="current">
-                        <span>Home</span></li>
+                        <span>Начало</span></li>
                     <li>
-                        <span>Property</span></li>
+                        <span>Продажби</span></li>
                     <li>
-                        <span>Realtor</span></li>
+                        <span>Наеми</span></li>
                     <li>
-                        <span>Pages</span></li>
+                        <span>Луксозни имоти</span></li>
                     <li>
-                        <span>Shop</span></li>
+                        <span>За нас</span></li>
                     <li>
-                        <span>Blog</span></li>
-                    <li><a href="contact.html">Contact</a></li>
+                        <span>Контакти</span></li>
+                   
                 </ul>
             </nav>
         </header>

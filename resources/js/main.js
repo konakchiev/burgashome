@@ -19,7 +19,20 @@
     * preloader
     * 
 */
+var videoContainer = $("#bgndVideo");
+videoContainer.css('display', 'block!important'); // или използвай videoContainer.show();
 
+videoContainer.mb_YTPlayer({
+  videoURL: "https://www.youtube.com/watch?v=TrWrXFAs1Qg",
+  containment: 'body',
+  mute: true,
+  autoPlay: true,
+  startAt: 0,
+  showControls: false,
+  loop: true,
+  quality: 'hd1080',
+  optimizeDisplay: true
+});
 ; (function ($) {
 
   "use strict";
@@ -108,29 +121,10 @@
     }
   };
 
-  var counter = function () {
-    if ($(document.body).hasClass("counter-scroll")) {
-      var a = 0;
-      $(window).scroll(function () {
-        var oTop = $(".counter").offset().top - window.innerHeight;
-        if (a == 0 && $(window).scrollTop() > oTop) {
-          if ($().countTo) {
-            $(".counter")
-              .find(".number")
-              .each(function () {
-                var to = $(this).data("to"),
-                  speed = $(this).data("speed");
-                $(this).countTo({
-                  to: to,
-                  speed: speed,
-                });
-              });
-          }
-          a = 1;
-        }
-      });
-    }
+  var counter = function (){
+
   };
+
 
   var flatAccordion = function (class1,class2) {
     var args = { duration: 400 };
@@ -359,6 +353,8 @@
     }
   };
 
+
+
   // Dom Ready
   $(function () {
    
@@ -385,3 +381,63 @@
   new Mmenu(document.querySelector("#menu"));
 
 })(jQuery);
+
+// Loads the YouTube IFrame API JavaScript code.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+// Inserts YouTube JS code into the page.
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+// onYouTubeIframeAPIReady() is called when the IFrame API is ready to go.
+function onYouTubeIframeAPIReady() {
+  	player = new YT.Player('player', {
+    	height: '2160',
+      width: '3840',
+      videoId: 'IaknsEPswIk',
+      playerVars: { 'autoplay': 1, 'loop': 1, 'fs': 0, 'start': '150', 'controls': 0, 'showinfo': 1, 'disablekb': 1, 'rel': 0,  'modestbranding': 1, 'enablejsapi':1, 'wmode' : 'transparent'},
+      events : {
+     	 	'onReady' : pkOnPlayerReady,
+         'onStateChange' : pkOnPlayerStateChange
+      }
+  	});
+}
+
+function pkOnPlayerStateChange(e) {
+  	var frm = $(e.target.getIframe());
+  	if (e.data === YT.PlayerState.ENDED) {
+      if ('player' === frm.attr('id')) {
+          player.playVideo();
+      }
+  	}
+  	if (e.data === YT.PlayerState.BUFFERING) {
+      if ('player' === frm.attr('id')) {
+         e.target.setPlaybackQuality('hd720');
+		}
+  	}
+}
+function pkOnPlayerReady(e) {
+	player.mute();
+ 	e.target.setPlaybackQuality('hd720');
+}
+
+//Load a youtube pixel
+var pkEnableYoutube = function() {
+     var deferred = jQuery.Deferred();
+     var img = new Image();
+     img.onload = function() { return deferred.resolve(); };
+     img.onerror = function() { return deferred.reject(); };
+     img.src = "https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif?"+ new Date().getTime();
+     return deferred.promise();
+};
+
+//When the video starts to load, set a timer for the video wrap to fade in
+jQuery(function($){
+	$.when(pkEnableYoutube()).done(function(){
+		setTimeout(function() {
+	 		$('.video_wrap').fadeIn();
+	 	}, 2000);
+	});
+});

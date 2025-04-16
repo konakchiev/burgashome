@@ -5808,8 +5808,9 @@ ul.grid-tags li a:hover {
 .slider.home1 .wrap-slider {
   position: relative;
   border-radius: 24px;
-  background-image: url(../images/slider/slider-home-1.jpg);
+  background-image: url(../images/burgas-2.jpg);
   background-attachment: fixed;
+  background-position: top;
 }
 .slider.home1 .wrap-slider::before {
   position: absolute;
@@ -6886,7 +6887,6 @@ ul.grid-tags li a:hover {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-left: 197px;
 }
 #header_main .header-inner .header-inner-wrap .main-menu ul.navigation > li {
   position: relative;

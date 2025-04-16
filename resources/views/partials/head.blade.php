@@ -20,7 +20,7 @@
     <!-- Theme Style -->
      
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    
+    <link rel="stylesheet" href="{{ Vite:: asset('resources/css/jquery.mb.YTPlayer.min.css')}}">
     <!-- Font -->
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
@@ -31,5 +31,6 @@
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="{{ Vite::asset('resources/images/favicon.png') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ Vite::asset('images/favicon.png') }}">
+    
     
 </head>

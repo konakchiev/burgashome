@@ -37,44 +37,44 @@
                     <div class="center-footer">
                     
                         <div class="footer-cl-2">
-                            <div class="ft-title">Discover</div>
+                            <div class="ft-title">Имоти по градове</div>
                             <ul class="navigation-menu-footer">
-                                <li><a href="property-map-v1.html">Miami</a></li>
-                                <li><a href="property-map-v1.html">New York</a></li>
-                                <li><a href="property-map-v1.html">Chicago</a></li>
-                                <li><a href="property-map-v1.html">Sacramento</a></li>
-                                <li><a href="property-map-v1.html">Los Angeles</a></li>
-                                <li><a href="property-map-v1.html">San Francisco</a></li>
+                                <li><a href="property-map-v1.html">Бургас</a></li>
+                                <li><a href="property-map-v1.html">Созопол</a></li>
+                                <li><a href="property-map-v1.html">Несебър</a></li>
+                                <li><a href="property-map-v1.html">Поморие</a></li>
+                                <li><a href="property-map-v1.html">Слънчев бряг</a></li>
+                                <li><a href="property-map-v1.html">Черноморец</a></li>
                             </ul>
                         </div>
                         <div class="footer-cl-3">
-                            <div class="ft-title">Quick Links</div>
+                            <div class="ft-title">Бързи линкове</div>
                             <ul class="navigation-menu-footer">
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="faq.html">Faq</a></li>
-                                <li><a href="blog-list-v1.html">Blog</a></li>
-                                <li><a href="pricing.html">Pricing Plans</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="about.html">За нас</a></li>
+                                <li><a href="contact.html">Контакти</a></li>
+                                <li><a href="faq.html">Ч.З.В</a></li>
+                                <li><a href="blog-list-v1.html">Луксозни имоти</a></li>
+                                <li><a href="pricing.html">Продажби</a></li>
+                                <li><a href="#">Правила и условия</a></li>
+                                <li><a href="#">Политика за поверителност</a></li>
                             </ul>
                         </div>
                         <div class="footer-cl-4">
-                            <div class="ft-title">Contact Us</div>
+                            <div class="ft-title">Контакти</div>
                             <ul class="navigation-menu-footer">
-                                <li><div class="text">hi@justhome.com (123) 456-7890</div></li>
+                                <li><div class="text">office@burgashome.com (123) 456-7890</div></li>
                             </ul>
                         </div>
                         <div class="footer-cl-5">
-                            <div class="ft-title">Our Address</div>
+                            <div class="ft-title">Адрес</div>
                             <ul class="navigation-menu-footer">
-                                <li><div class="text">90 Fifth Avenue, 3rd Floor San Francisco, CA 1980</div></li>
+                                <li><div class="text">гр. Бургас, бул. Христо Ботев 63, ет.2, 8000, България</div></li>
                             </ul>
                         </div>
                     
                     </div>
                     <div class="bottom-footer">
-                        <div class="text">Copyright © 2024. JustHome</div>
+                        <div class="text">Всички права запазени © 2025. БУРГАС ХОУМ ЕООД</div>
                     </div>
                 </div>
             </div>
@@ -196,16 +196,10 @@
 <script type="text/javascript" src="{{ Vite::asset('resources/js/swiper.js') }}"></script>
 <script type="text/javascript" src="{{ Vite::asset('resources/js/scrollmagic.js') }}"></script>
 <script type="text/javascript" src="{{ Vite::asset('resources/js/wow.min.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/jquery-background-video.js') }}"></script>
+<script type="text/javascript" src="{{ Vite::asset('resources/js/jquery.mb.YTPlayer.min.js') }}"></script>
 <script type="text/javascript" src="{{ Vite::asset('resources/js/main.js') }}"></script>
 <script>
     new Mmenu(document.querySelector("#menu"));
 </script>
-<script>
-    $(document).ready(function(){
-	$('.my-background-video').bgVideo();
-});
-</script>
-
 </body>
 </html>

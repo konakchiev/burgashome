@@ -1,0 +1,104 @@
+h1,h2,h3,h4,h5,h6,p,span,input, select, form, small, li, a {
+    font-family: 'ropa-sans-pro', sans-serif;
+}
+
+::placeholder {
+    font-family: 'ropa-sans-pro', sans-serif;
+}
+
+.logo-cropped {
+    width: 75px;
+    margin: 0 auto;
+    display: block;
+}
+
+.bsh--primary {
+    background: #718d81;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 50px;
+    border: 0;
+    font-weight: bold;
+}
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+.bg-image     { background-size:cover; background-position:center center; }
+.overlay    { position:relative; background:linear-gradient(to bottom, rgb(0 0 0 / 69%), rgba(0, 0, 0, 0)); height:100%; width:100%; z-index:2; }
+.inner      { padding-top:50px; }
+h1      { color:#ffffff; margin:0 auto; }
+.video_wrap   { height:100%; width:100%; position:absolute; left:0; overflow:hidden; top:0; padding-bottom:56.5%; } 
+iframe      { height:100%; position:absolute; width:100%; top:-3px; left:0; }
+
+#page-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;;
+}
+
+.flat-cities.style-1 {
+    background: #fff;
+}
+
+.heading-section-left {
+    margin-left: 45px;
+}
+
+.luxury-home {
+    background: #1a1a1a;
+}
+
+.luxury-home .content h2 {
+    font-family: lumios-brush, sans-serif !important;
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.tf-button-primary {
+    background: #718d81;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.number, .price {
+    color: #718d81!important;
+}
+
+.luxury-home {
+    padding: 100px 0;
+}
+
+.type-ffffff {
+    background-color: #fff!important;
+}
+
+.properties-content-default {
+    background: #718d81!important;
+}
+
+.properties-content-default .number, .properties-content-default .text,  .properties-content-default p {
+    color: #fff!important;
+}
+
+.special-price {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.form-search-home5 {
+    position: relative;
+    top: -50px;
+}
+
+.form-search-home5 .button-submit button {
+    background: #718d81;
+    color: #fff!important;
+}

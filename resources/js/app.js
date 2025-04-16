@@ -9,3 +9,5 @@ import './wow.min.js';
 import './scrollmagic.js';
 import './wow.min.js';
 import './main.js';
+import Plyr from 'plyr';
+
