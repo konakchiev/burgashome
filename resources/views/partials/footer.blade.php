@@ -187,17 +187,17 @@
     </div>
 </div>
 <!-- /register-popup -->
-<script type="text/javascript" src="{{ Vite::asset('resources/js/jquery.min.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/bootstrap-select.min.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/swiper-bundle.min.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/rangle-slider.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/mmenu.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/swiper.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/scrollmagic.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/wow.min.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/jquery.mb.YTPlayer.min.js') }}"></script>
-<script type="text/javascript" src="{{ Vite::asset('resources/js/main.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/bootstrap-select.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/swiper-bundle.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/rangle-slider.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/mmenu.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/swiper.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/scrollmagic.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/wow.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/jquery.mb.YTPlayer.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('resources/js/main.js') }}"></script>
 <script>
     new Mmenu(document.querySelector("#menu"));
 </script>
