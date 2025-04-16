@@ -14,7 +14,6 @@ export default defineConfig({
                 'resources/css/bootstrap-select.min.css',
                 'resources/css/swiper-bundle.min.css',
                 'resources/css/magnific-popup.min.css',
-                'resources/css/ytp.css',
                 'resources/css/mmenu.css',
                 'resources/css/style.css',
                 'resources/css/custom.css',
