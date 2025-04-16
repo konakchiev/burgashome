@@ -20,7 +20,6 @@
     <!-- Theme Style -->
      
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" href="{{ Vite:: asset('resources/css/jquery.mb.YTPlayer.min.css')}}">
     <!-- Font -->
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
