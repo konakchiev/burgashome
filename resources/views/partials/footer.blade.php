@@ -5,7 +5,7 @@
                     <div class="top-footer">
                         <div class="logo-footer">
                             <a href="/">
-                                <img id="logo-footer" src="{{ Vite::asset('resources/images/logo/logo-white-bshome.png') }}" alt="images" >
+                                <img id="logo-footer" src="{{ asset('resources/images/logo/logo-white-bshome.png') }}" alt="images" >
                             </a>
                         </div>
                         <div class="wg-social">
