@@ -20,7 +20,7 @@
                             <div class="cl-container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <img class="logo-cropped" src="{{ asset('resources/images/logo/logo-cropped.png')}}" alt="">
+                                        <img class="logo-cropped" src="{{ asset('images/logo/logo-cropped.png')}}" alt="">
                                         <h1 style="font-family: 'lumios-brush', sans-serif!important; font-weight: 100; font-size: 120px; line-height: 0.8; max-width: 100%" class=" wow fadeInUp" data-wow-delay="0.2s">Вашият мечтан дом на брега на морето!</h1>
                                         <a href="#" class="bsh--primary mt-5 btn btn-primary">Продажби</a>
                                     </div>
@@ -29,8 +29,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="video_wrap" style="display:none"><div id="player"></div></div>
+                <div class="video_wrap" style=""><div data-vbg="https://www.youtube.com/watch?v=IaknsEPswIk"></div></div>
             </section>
+            
             <!-- /slider -->
              <div class="cl-container">
                 <div class="row">
@@ -54,13 +55,32 @@
                             <div class="divider-1"></div>
                             <div class="group-form">
                                 <div class="form-style-has-title">
+                                    <div class="title">Вид</div>
+                                    <div class="nice-select style-white" tabindex="0">
+                                        <span class="current">Всички</span>
+                                        <ul class="list style-radio">    
+                                            <li data-value="For Sale" class="option selected">Продажба</li>
+                                            <li data-value="For Ren" class="option">Наем</li>
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider-1"></div>
+                            <div class="group-form">
+                                <div class="form-style-has-title">
                                     <div class="title">Град</div>
                                     <div class="nice-select style-white" tabindex="0">
                                         <span class="current">Всички градове</span>
                                         <ul class="list style-radio">    
-                                            <li data-value="For Sale" class="option selected">For Sale</li>
-                                            <li data-value="For Ren" class="option">For Ren</li>
-                                            <li data-value="Sold" class="option">Sold</li>
+                                            <li data-value="For Sale" class="option selected">Бургас</li>
+                                            <li data-value="For Ren" class="option">Поморие</li>
+                                            <li data-value="For Ren" class="option">Несебър</li>
+                                            <li data-value="For Ren" class="option">Созопол</li>
+                                            <li data-value="For Ren" class="option">Слънчев бряг</li>
+                                            <li data-value="For Ren" class="option">Черноморец</li>
+                                            <li data-value="For Ren" class="option">Приморско</li>
+                                            <li data-value="For Ren" class="option">Китен</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -72,11 +92,12 @@
                                     <div class="nice-select style-white" tabindex="0">
                                         <span class="current">Всички</span>
                                         <ul class="list">    
-                                            <li data-value="" class="option selected">All Type</li>
-                                            <li data-value="Office" class="option">Office</li>
-                                            <li data-value="Villa" class="option">Villa</li>
-                                            <li data-value="Shop" class="option">Shop</li>
-                                            <li data-value="Single Family" class="option">Single Family</li>
+                                            <li data-value="" class="option selected">Всички</li>
+                                            <li data-value="Office" class="option">Двустаен апартамент</li>
+                                            <li data-value="Villa" class="option">Тристаен апартамент</li>
+                                            <li data-value="Shop" class="option">Многостаен апартамент</li>
+                                            <li data-value="Single Family" class="option">Къща</li>
+                                            <li data-value="Single Family" class="option">Къща</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -112,7 +133,7 @@
                                         <div class="swiper-wrapper" id="swiper-wrapper-ce1110410acf993e47" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                             <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 9" style="width: 404px; margin-right: 25px;">
                                                 <div class="cities-item style-2 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                                                    <img src="{{ asset('resources/images/burgas.jpg')}}" alt="">
+                                                    <img src="{{ asset('images/burgas.jpg')}}" alt="">
                                                     <div class="content">
                                                         <p>13 Имота</p>
                                                         <h4>Бургас</h4>
@@ -122,7 +143,7 @@
                                             </div>
                                             <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 9" style="width: 404px; margin-right: 25px;">
                                                 <div class="cities-item style-2 wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-                                                    <img src="{{ asset('resources/images/sarafovo.jpg')}}" alt="">
+                                                    <img src="{{ asset('images/sarafovo.jpg')}}" alt="">
                                                     <div class="content">
                                                         <p>55 Имота</p>
                                                         <h4>Сарафово</h4>
@@ -132,7 +153,7 @@
                                             </div>
                                             <div class="swiper-slide" role="group" aria-label="3 / 9" style="width: 404px; margin-right: 25px;">
                                                 <div class="cities-item style-2 wow fadeInUp animated" data-wow-delay="0.15s" style="visibility: visible; animation-delay: 0.15s; animation-name: fadeInUp;">
-                                                    <img src="{{ asset('resources/images/nesebar.jpg')}}" alt="">
+                                                    <img src="{{ asset('images/nesebar.jpg')}}" alt="">
                                                     <div class="content">
                                                         <p>37 Имота</p>
                                                         <h4>Несебър</h4>
@@ -142,7 +163,7 @@
                                             </div>
                                             <div class="swiper-slide" role="group" aria-label="4 / 9" style="width: 404px; margin-right: 25px;">
                                                 <div class="cities-item style-2 wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-                                                    <img src="{{ asset('resources/images/sozopol.jpg')}}" alt="">
+                                                    <img src="{{ asset('images/sozopol.jpg')}}" alt="">
                                                     <div class="content">
                                                         <p>26 Имота</p>
                                                         <h4>Созопол</h4>
@@ -152,7 +173,7 @@
                                             </div>
                                             <div class="swiper-slide" role="group" aria-label="5 / 9" style="width: 404px; margin-right: 25px;">
                                                 <div class="cities-item style-2 wow fadeInUp animated" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
-                                                    <img src="{{ asset('resources/images/sunnybeach.jpg')}}" alt="">
+                                                    <img src="{{ asset('images/sunnybeach.jpg')}}" alt="">
                                                     <div class="content">
                                                         <p>93 Имота</p>
                                                         <h4>Слънчев бряг</h4>
@@ -162,7 +183,7 @@
                                             </div>
                                             <div class="swiper-slide" role="group" aria-label="6 / 9" style="width: 404px; margin-right: 25px;">
                                                 <div class="cities-item style-2">
-                                                    <img src="{{ asset('resources/images/pomorie.jpg')}}" alt="">
+                                                    <img src="{{ asset('images/pomorie.jpg')}}" alt="">
                                                     <div class="content">
                                                         <p>84 Имота</p>
                                                         <h4>Поморие</h4>
@@ -207,22 +228,22 @@
                                                             <div class="swiper-wrapper">
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-1.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-1.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-2.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-2.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-3.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-3.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-4.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-4.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -272,22 +293,22 @@
                                                             <div class="swiper-wrapper">
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{  asset('resources/images/house/home-4.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{  asset('images/house/home-4.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-1.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-1.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-3.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-3.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-4.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-4.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -337,22 +358,22 @@
                                                             <div class="swiper-wrapper">
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-2.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-2.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-2.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-2.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-1.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-1.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-4.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-4.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -403,22 +424,22 @@
                                                             <div class="swiper-wrapper">
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-1.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-1.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-2.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-2.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-3.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-3.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-4.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-4.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -468,22 +489,22 @@
                                                             <div class="swiper-wrapper">
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{  asset('resources/images/house/home-4.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{  asset('images/house/home-4.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-1.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-1.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-3.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-3.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                                 <div class="swiper-slide">
                                                                     <div class="w-full">
-                                                                        <img class="w-full" src="{{ asset('resources/images/house/home-4.jpg')}}" alt="">
+                                                                        <img class="w-full" src="{{ asset('images/house/home-4.jpg')}}" alt="">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -537,7 +558,7 @@
                         <div class="row justify-between">
                             <div class="col-md-4">
                                 <div class="image wow fadeInLeft">
-                                    <img src="{{ asset('resources/images/gabi.jpg')}}" alt="">
+                                    <img src="{{ asset('images/gabi.jpg')}}" alt="">
                                 </div>
                             </div>
                             <div class="col-xl-7 col-md-5">
@@ -597,12 +618,12 @@
                                             <div class="swiper-wrapper" id="swiper-wrapper-5b91b3f9192b5684" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
                                                 <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 686px;">
                                                     <div class="w-full">
-                                                        <img class="w-full" src="{{ asset('resources/images/slider/slider-properties-1.jpg')}}" alt="">
+                                                        <img class="w-full" src="{{ asset('images/slider/slider-properties-1.jpg')}}" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2" style="width: 686px;">
                                                     <div class="w-full">
-                                                        <img class="w-full" src="{{ asset('resources/images/slider/slider-properties-2.jpg')}}" alt="">
+                                                        <img class="w-full" src="{{ asset('images/slider/slider-properties-2.jpg')}}" alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -617,7 +638,7 @@
                                         <a href="property-single-v1.html" class="button-arrow-right"><i class="icon-arrow-right-add"></i></a>
                                     </div>
                                     <div class="video-wrap item-3">
-                                        <img src="{{ asset('resources/images/burgas.jpg')}}" alt="">
+                                        <img src="{{ asset('images/burgas.jpg')}}" alt="">
                                        
                                     </div>
                                     <div class="box-dream style-absolute type-no-bg-content style-properties item-4">
@@ -626,7 +647,7 @@
                                                 <a href="#" class="tags-item for-sell">ПРОДАЖБА</a>
                                                 <a href="#" class="tags-item featured">ПРЕПОРЪЧАНО</a>
                                             </div>
-                                            <img class="w-full" src="{{ asset('resources/images/house/best-properties-1.jpg')}}" alt="">
+                                            <img class="w-full" src="{{ asset('images/house/best-properties-1.jpg')}}" alt="">
                                         </div>
                                         <div class="content">
                                             <div class="head">

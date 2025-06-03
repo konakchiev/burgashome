@@ -4,18 +4,18 @@
                 <div class="header-inner-wrap">
                     <div id="site-logo">
                         <a href="/" rel="home">
-                            <img style="width: 200px;" id="logo-header" src="{{ asset('resources/images/logo/logo-white-bshome.png') }}"  alt="">
-                            <img id="logo-header-mobile" src="images/logo/logo.svg" alt="">
+                            <img style="width: 200px;" id="logo-header" src="{{ asset('images/logo/logo-white-bshome.png') }}"  alt="">
+                            <img id="logo-header-mobile" src="{{ asset('images/logo/logo-white-bshome.png') }}" alt="">
                         </a>
                     </div>
                     <nav class="main-menu style-white">
                         <ul class="navigation">
-                            <li class="current"><a href="javascript:void(0);">Начало</a></li>
-                            <li><a href="javascript:void(0);">Продажби</a></li>
-                            <li><a href="javascript:void(0);">Наеми</a></li>
-                            <li><a href="javascript:void(0);">Луксозни имоти</a></li>
-                            <li><a href="javascript:void(0);">За нас</a></li>
-                            <li ><a href="javascript:void(0);">Контакти</a></li>
+                            <li class="current"><a href="/">Начало</a></li>
+                            <li><a href="/prodajbi">Продажби</a></li>
+                            <li><a href="/naemi">Наеми</a></li>
+                            <li><a href="/luksozni-imoti">Луксозни имоти</a></li>
+                            <li><a href="/za-nas">За нас</a></li>
+                            <li ><a href="/kontakti">Контакти</a></li>
                         </ul>
                     </nav>
                     <div class="header-right">
@@ -23,7 +23,7 @@
                             <div class="icon">
                                 <i class="flaticon-phone"></i>
                             </div>
-                            <div class="number">800-555-6789</div>
+                            <div class="number">0883 370959</div>
                         </div>
                     
                         <div class="header-btn">

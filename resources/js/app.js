@@ -1,13 +1,15 @@
+import '../css/app.css';
 import './jquery.min.js';
-import './bootstrap.min.js';
-import './bootstrap-select.min.js';
+import './jquery.nice-select.min.js';
+import './yt.js';
+import './mmenu.js';
 import './swiper-bundle.min.js';
 import './swiper.js';
+import './bootstrap.min.js';
+import './bootstrap-select.min.js';
+import './magnific-popup.min.js';
 import './rangle-slider.js';
-import './mmenu.js';
-import './wow.min.js';
-import './scrollmagic.js';
-import './wow.min.js';
 import './main.js';
-import Plyr from 'plyr';
+
+console.log('App JS loaded');
 

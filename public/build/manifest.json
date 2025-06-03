@@ -1,11 +1,15 @@
 {
+  "public/images/burgas-2.jpg": {
+    "file": "assets/burgas-2-CsLxqQn5.jpg",
+    "src": "public/images/burgas-2.jpg"
+  },
   "resources/css/animation.css": {
     "file": "assets/animation-DLCMZ1-y.css",
     "src": "resources/css/animation.css",
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-DPXapzqa.css",
+    "file": "assets/app-DDX_Y7wM.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -20,7 +24,7 @@
     "isEntry": true
   },
   "resources/css/custom.css": {
-    "file": "assets/custom-Bh9PNfac.css",
+    "file": "assets/custom-pJGHzceN.css",
     "src": "resources/css/custom.css",
     "isEntry": true
   },
@@ -45,7 +49,7 @@
     "isEntry": true
   },
   "resources/css/style.css": {
-    "file": "assets/style-BAxsAO_y.css",
+    "file": "assets/style-B3eC79nX.css",
     "src": "resources/css/style.css",
     "isEntry": true
   },
@@ -54,58 +58,27 @@
     "src": "resources/css/swiper-bundle.min.css",
     "isEntry": true
   },
-  "resources/images/burgas-2.jpg": {
-    "file": "assets/burgas-2-CsLxqQn5.jpg",
-    "src": "resources/images/burgas-2.jpg"
-  },
-  "resources/images/favicon.png": {
-    "file": "assets/favicon-BhIRFOLm.png",
-    "src": "resources/images/favicon.png"
-  },
-  "resources/images/slider/slider-home-1.jpg": {
-    "file": "assets/slider-home-1-pAhXQQ6X.jpg",
-    "src": "resources/images/slider/slider-home-1.jpg"
-  },
-  "resources/images/slider/slider-home-10.jpg": {
-    "file": "assets/slider-home-10-sb5_zfVS.jpg",
-    "src": "resources/images/slider/slider-home-10.jpg"
-  },
-  "resources/images/slider/slider-home-2.jpg": {
-    "file": "assets/slider-home-2-DITzFBOP.jpg",
-    "src": "resources/images/slider/slider-home-2.jpg"
-  },
-  "resources/images/slider/slider-home-3.jpg": {
-    "file": "assets/slider-home-3-CuRjB0-j.jpg",
-    "src": "resources/images/slider/slider-home-3.jpg"
-  },
-  "resources/images/slider/slider-home-6.jpg": {
-    "file": "assets/slider-home-6-CdqxZVxe.jpg",
-    "src": "resources/images/slider/slider-home-6.jpg"
-  },
-  "resources/images/slider/slider-home-8.jpg": {
-    "file": "assets/slider-home-8-BXsV6Zhv.jpg",
-    "src": "resources/images/slider/slider-home-8.jpg"
-  },
-  "resources/images/slider/slider-home-9.jpg": {
-    "file": "assets/slider-home-9-Dodu0xOj.jpg",
-    "src": "resources/images/slider/slider-home-9.jpg"
-  },
   "resources/js/app.js": {
-    "file": "assets/app-DFHRHbXB.js",
+    "file": "assets/app-CvNJGmxr.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
       "resources/js/jquery.min.js",
-      "resources/js/bootstrap.min.js",
-      "resources/js/bootstrap-select.min.js",
+      "resources/js/yt.js",
+      "resources/js/mmenu.js",
       "resources/js/swiper-bundle.min.js",
       "resources/js/swiper.js",
+      "resources/js/bootstrap.min.js",
+      "resources/js/bootstrap-select.min.js",
       "resources/js/rangle-slider.js",
-      "resources/js/mmenu.js",
-      "resources/js/wow.min.js",
-      "resources/js/scrollmagic.js",
       "resources/js/main.js"
+    ],
+    "css": [
+      "assets/app-DDX_Y7wM.css"
+    ],
+    "assets": [
+      "assets/burgas-2-CsLxqQn5.jpg"
     ]
   },
   "resources/js/bootstrap-select.min.js": {
@@ -121,13 +94,13 @@
     "isEntry": true
   },
   "resources/js/jquery.min.js": {
-    "file": "assets/jquery.min-5GtrIU7X.js",
+    "file": "assets/jquery.min-CW0vmDOD.js",
     "name": "jquery.min",
     "src": "resources/js/jquery.min.js",
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main-DkE0K44u.js",
+    "file": "assets/main-Y8OP2uxy.js",
     "name": "main",
     "src": "resources/js/main.js",
     "isEntry": true
@@ -142,12 +115,6 @@
     "file": "assets/rangle-slider-BhjjIoP0.js",
     "name": "rangle-slider",
     "src": "resources/js/rangle-slider.js",
-    "isEntry": true
-  },
-  "resources/js/scrollmagic.js": {
-    "file": "assets/scrollmagic-BwEM_eeM.js",
-    "name": "scrollmagic",
-    "src": "resources/js/scrollmagic.js",
     "isEntry": true
   },
   "resources/js/swiper-bundle.min.js": {
@@ -166,6 +133,12 @@
     "file": "assets/wow.min-BDARHrGi.js",
     "name": "wow.min",
     "src": "resources/js/wow.min.js",
+    "isEntry": true
+  },
+  "resources/js/yt.js": {
+    "file": "assets/yt-Cbtl36Kh.js",
+    "name": "yt",
+    "src": "resources/js/yt.js",
     "isEntry": true
   }
 }

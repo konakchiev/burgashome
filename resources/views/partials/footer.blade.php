@@ -5,7 +5,7 @@
                     <div class="top-footer">
                         <div class="logo-footer">
                             <a href="/">
-                                <img id="logo-footer" src="{{ asset('resources/images/logo/logo-white-bshome.png') }}" alt="images" >
+                                <img id="logo-footer" src="{{ asset('images/logo/logo-white-bshome.png') }}" alt="images" >
                             </a>
                         </div>
                         <div class="wg-social">
@@ -85,7 +85,17 @@
     <!-- /#page -->
 </div>
 <!-- /#wrapper -->
-
+<div class="cookie-bar is-active" data-cookie-bar="">
+            <div class="container cookie-bar__container">
+                <a class="cookie-bar__logo" href="#"> <img style="width: 50px;" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" class="cookie-bar__logo-image" alt=""> </a>
+                <div class="cookie-bar__wrap">
+                    <div class="cookie-bar__content">
+                        <p>Този сайт използва бисквитки за да предостави по-добро потребителско преживяване. За повече информация посетете странита <a href="/gdpr.php">Политика за поверителност</a>.</p>
+                    </div>
+                    <div class="cookie-bar__actions"> <button type="button" class="cookie-bar__button" style="color: #000;" data-close-action=""> OK </button></div>
+                </div>
+            </div>
+        </div>
 <!-- go top button -->
 <div class="progress-wrap active-progress">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -94,112 +104,7 @@
 </div>
 <!-- /go top button -->
 
-<!-- login-popup -->
-<div class="modal fade modalCenter" id="modallogin">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content modal-sm">
-            <a href="#" class="btn-hide-modal" data-bs-dismiss="modal"><i class="icon-close"></i></a>
-            <div class="image-left">
-                <img src="images/section/login.jpg" alt="">
-                <h3>Welcome to Your Real Estate Website</h3>
-            </div>  
-            <div class="content-right">
-                <h4>Sign into your account</h4>
-                <form class="form-login">
-                    <fieldset class="name">
-                        <input type="text" placeholder="Username" class="" name="text" tabindex="2" value="creative" aria-required="true" required="">
-                    </fieldset>
-                    <fieldset class="password">
-                        <input type="password" placeholder="Password" class="" name="password" tabindex="2" value="" aria-required="true" required="">
-                    </fieldset>
-                    <div class="flex items-center justify-between w-full">
-                        <div class="checkbox-item">
-                            <label>
-                                <p>Remember me</p>
-                                <input type="checkbox">
-                                <span class="btn-checkbox"></span>
-                            </label>
-                        </div>
-                        <a href="#" class="lost-password">Lost your password?</a>
-                    </div>
-                    <div class="button-submit w-full">
-                        <button class="tf-button-primary w-full" type="submit">Login<i class="icon-arrow-right-add"></i></button>
-                    </div>
-                </form>
-                <div class="flex items-center justify-center">
-                    <p>Not a member?</p>
-                    <a href="#" class="btn-show-register" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalregister">Register here</a>
-                </div>
-                <ul class="wg-social-1">
-                    <li><a href="#"><i class="flaticon-google"></i></a></li>
-                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
-                    <li><a href="#"><i class="flaticon-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /login-popup -->
 
-<!-- register-popup -->
-<div class="modal fade modalCenter" id="modalregister">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content modal-sm">
-            <a href="#" class="btn-hide-modal" data-bs-dismiss="modal"><i class="icon-close"></i></a>
-            <div class="image-left">
-                <img src="images/section/login.jpg" alt="">
-                <h3>Welcome to Your Real Estate Website</h3>
-            </div>
-            <div class="content-right">
-                <h4>Create an account</h4>
-                <form class="form-login">
-                    <fieldset class="name">
-                        <input type="text" placeholder="Username" class="" name="text" tabindex="2" value="" aria-required="true" required="">
-                    </fieldset>
-                    <fieldset class="email">
-                        <input type="email" placeholder="Email" class="" name="email" tabindex="2" value="" aria-required="true" required="">
-                    </fieldset>
-                    <fieldset class="password">
-                        <input type="password" placeholder="Password" class="" name="password" tabindex="2" value="" aria-required="true" required="">
-                    </fieldset>
-                    <fieldset class="password">
-                        <input type="password" placeholder="Retype Password" class="" name="password" tabindex="2" value="" aria-required="true" required="">
-                    </fieldset>
-                    <div class="flex items-center justify-between">
-                        <div class="checkbox-item">
-                            <label>
-                                <p>I agree with terms & conditions</p>
-                                <input type="checkbox">
-                                <span class="btn-checkbox"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="button-submit">
-                        <button class="tf-button-primary w-full" type="submit">Register<i class="icon-arrow-right-add"></i></button>
-                    </div>
-                </form>
-                <div class="flex items-center justify-center">
-                    <p>Have an account?</p>
-                    <a href="#" class="btn-show-register" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modallogin">Log in</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- /register-popup -->
-<script type="text/javascript" src="{{ asset('resources/js/jquery.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/bootstrap-select.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/swiper-bundle.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/rangle-slider.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/mmenu.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/swiper.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/scrollmagic.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/wow.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/jquery.mb.YTPlayer.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('resources/js/main.js') }}"></script>
-<script>
-    new Mmenu(document.querySelector("#menu"));
-</script>
 </body>
+
 </html>

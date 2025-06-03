@@ -26,8 +26,8 @@ export default defineConfig({
                 'resources/js/rangle-slider.js',
                 'resources/js/mmenu.js',
                 'resources/js/wow.min.js',
-                'resources/js/scrollmagic.js',
-                'resources/js/main.js',
+                'resources/js/yt.js',
+                'resources/js/main.js'
                 ],
             refresh: true,
         }),

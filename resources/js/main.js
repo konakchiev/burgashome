@@ -19,20 +19,7 @@
     * preloader
     * 
 */
-var videoContainer = $("#bgndVideo");
-videoContainer.css('display', 'block!important'); // или използвай videoContainer.show();
 
-videoContainer.mb_YTPlayer({
-  videoURL: "https://www.youtube.com/watch?v=TrWrXFAs1Qg",
-  containment: 'body',
-  mute: true,
-  autoPlay: true,
-  startAt: 0,
-  showControls: false,
-  loop: true,
-  quality: 'hd1080',
-  optimizeDisplay: true
-});
 ; (function ($) {
 
   "use strict";
@@ -199,59 +186,7 @@ videoContainer.mb_YTPlayer({
     }, 500);
   }}
 
-  var headerFixed = function () {
-    if ($("header").hasClass("header-fixed")) {
 
-      window.App = {};
-      App.SMcontroller = new ScrollMagic.Controller();
-      let scrollPos = 0;
-      new ScrollMagic.Scene()
-        .on('update', (e) => {
-          if (e.scrollPos > scrollPos) {
-            document.querySelector('.header').classList.remove('is-small');
-          } else {
-            document.querySelector('.header').classList.add('is-small');
-          }
-          scrollPos = e.scrollPos;
-        })
-      .addTo(App.SMcontroller);
-
-      var nav = $("#header_main"),
-          offsetTop = nav.offset().top,
-          headerHeight = nav.height();
-
-      const header = document.querySelector('.header');
-      new ScrollMagic.Scene({ offset: offsetTop + headerHeight, })
-      .setClassToggle(header, 'is-fixed')
-      .addTo(App.SMcontroller);
-      
-      if (nav.length) {
-        var injectSpace = $("<div>", {
-          height: headerHeight,
-        });
-        injectSpace.hide();
-
-        if ($("header").hasClass("style-absolute")) {
-          injectSpace.hide();
-        } else {
-          injectSpace.insertAfter(nav);
-        }
-
-        if (!$("header").hasClass("style-fixed")) {
-          $(window).on("load scroll", function () {
-            if ($(window).scrollTop() > offsetTop + headerHeight) {
-              injectSpace.show();
-            } else {
-              nav.removeClass("is-fixed");
-              injectSpace.hide();
-            }
-          });
-        }
-
-      }
-
-    }
-  };
 
   var dashboard = function() {
     if ($('body').hasClass('dashboard')) {
@@ -368,7 +303,6 @@ videoContainer.mb_YTPlayer({
     icon_function();
     btnQuantity();
     progresslevel();
-    headerFixed();
     dashboard();
     gotop();
     sticky();
@@ -380,64 +314,41 @@ videoContainer.mb_YTPlayer({
 
   new Mmenu(document.querySelector("#menu"));
 
+
+
+  jQuery('[data-vbg]').youtube_background({
+    'autoplay':true,
+    'start-at': 51,
+    'end-at': 200
+
+  });
 })(jQuery);
 
-// Loads the YouTube IFrame API JavaScript code.
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-// Inserts YouTube JS code into the page.
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
-
-// onYouTubeIframeAPIReady() is called when the IFrame API is ready to go.
-function onYouTubeIframeAPIReady() {
-  	player = new YT.Player('player', {
-    	height: '2160',
-      width: '3840',
-      videoId: 'IaknsEPswIk',
-      playerVars: { 'autoplay': 1, 'loop': 1, 'fs': 0, 'start': '150', 'controls': 0, 'showinfo': 1, 'disablekb': 1, 'rel': 0,  'modestbranding': 1, 'enablejsapi':1, 'wmode' : 'transparent'},
-      events : {
-     	 	'onReady' : pkOnPlayerReady,
-         'onStateChange' : pkOnPlayerStateChange
-      }
-  	});
+function loadGoogleMaps(apiKey) {
+  const script = document.createElement('script');
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCe0H-2EPcN_rf0o6sq-h0Cg7Inv9R594I&callback=initMap';
+  script.async = true;
+  document.head.appendChild(script);
 }
 
-function pkOnPlayerStateChange(e) {
-  	var frm = $(e.target.getIframe());
-  	if (e.data === YT.PlayerState.ENDED) {
-      if ('player' === frm.attr('id')) {
-          player.playVideo();
-      }
-  	}
-  	if (e.data === YT.PlayerState.BUFFERING) {
-      if ('player' === frm.attr('id')) {
-         e.target.setPlaybackQuality('hd720');
-		}
-  	}
-}
-function pkOnPlayerReady(e) {
-	player.mute();
- 	e.target.setPlaybackQuality('hd720');
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map-1"), {
+    center: { lat: 42.6977, lng: 23.3219 }, // Example: Sofia, Bulgaria
+    zoom: 12,
+  });
+
+  // Optional marker
+  new google.maps.Marker({
+    position: { lat: 42.6977, lng: 23.3219 },
+    map: map,
+    title: "Sofia",
+  });
 }
 
-//Load a youtube pixel
-var pkEnableYoutube = function() {
-     var deferred = jQuery.Deferred();
-     var img = new Image();
-     img.onload = function() { return deferred.resolve(); };
-     img.onerror = function() { return deferred.reject(); };
-     img.src = "https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif?"+ new Date().getTime();
-     return deferred.promise();
-};
+// Expose globally for the Google Maps API callback
+window.initMap = initMap;
 
-//When the video starts to load, set a timer for the video wrap to fade in
-jQuery(function($){
-	$.when(pkEnableYoutube()).done(function(){
-		setTimeout(function() {
-	 		$('.video_wrap').fadeIn();
-	 	}, 2000);
-	});
-});
+loadGoogleMaps();
+
+console.log('all loaded');

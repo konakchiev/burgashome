@@ -18,17 +18,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Theme Style -->
-     
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Font -->
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
     <link rel="stylesheet" href="https://use.typekit.net/bsu6zbt.css">
     <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('resources/icon/flaticon_just-home.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('resources/icon/icomoon/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ Vite:: asset('resources/icon/flaticon_just-home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ Vite:: asset('resources/icon/icomoon/style.css') }}">
 
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="{{ asset('resources/images/favicon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
     <link rel="apple-touch-icon-precomposed" href="{{ asset('images/favicon.png') }}">
     
     
